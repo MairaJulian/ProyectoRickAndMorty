@@ -5,7 +5,7 @@ const Footer = () => {
     const [click, setclick] = useState(0);
 
     const year = new Date().getFullYear();
-    const companyName = "Mairita";
+    const companyName = "Maira";
 
     const handleClick = () => {
         setclick(click + 1)
@@ -24,11 +24,11 @@ const Footer = () => {
                 </span>
 
                 <ul className="nav col-md-4 justify-content-end">
-                    <li className="nav-item"><a href="#" className="nav-link px-2 text-muted">Home</a></li>
-                    <li className="nav-item"><a href="#" className="nav-link px-2 text-muted">Features</a></li>
-                    <li className="nav-item"><a href="#" className="nav-link px-2 text-muted">Pricing</a></li>
-                    <li className="nav-item"><a href="#" className="nav-link px-2 text-muted">FAQs</a></li>
-                    <li className="nav-item"><a href="#" className="nav-link px-2 text-muted">About</a></li>
+                    <li className="nav-item"><a href="/" className="nav-link px-2 text-muted">Home</a></li>
+                    <li className="nav-item"><a href="https://www.linkedin.com/in/maira-julian-768a001b0/" className="nav-link px-2 text-muted" target="_blank">Linkedin</a></li>
+                    <li className="nav-item"><a href="https://github.com/MairaJulian" className="nav-link px-2 text-muted" target="_blank">GitHub</a></li>
+                    <li className="nav-item"><a href="https://www.facebook.com/maira.julian" className="nav-link px-2 text-muted" target="_blank">Facebook</a></li>
+                    <li className="nav-item"><a href="https://www.instagram.com/mairajulian/?hl=es" className="nav-link px-2 text-muted" target="_blank">Instagram</a></li>
                 </ul>
             </footer>
         </div>

@@ -29,37 +29,21 @@ function App() {
     setPersonajesFiltrados(filtro);
   };
   
-  // useEffect(() => {
-  //   fetch(API_RM.PERSONAJES)
-  //     .then(response => response.json())
-  //     .then(data => setPersonajes(data.results));
-  //     console.log(personajes);
-  //     console.log("se está ejecutando el primer useeffect");
-  // }, []);
-  
   useEffect(() => {
     RickAndMortyService.getAllPersonajes()
-    .then((pepe) => setPersonajes(pepe.results))
-    .catch((error) => console.log(error));
-    console.log("se está ejecutando el primer useeffect");
-  }, [])
-  
-  useEffect(() => {
-    RickAndMortyService.getAllPersonajes()
-    .then((pepe) => setPersonajesFiltrados(pepe.results))
+    .then((pepe) => {
+      setPersonajesFiltrados(pepe.results)
+      setPersonajes(pepe.results)
+    })
     .catch((error) => console.log(error));
     console.log("se está ejecutando el segundo useeffect");
   }, [])
   
-  console.log("tiene contenido 1"+personajes);
+  console.log("tiene contenido 1",personajes);
   console.log("tiene contenido 2"+personajesFiltrados);
-  // console.log(search);
-  // // const mapPersonajes = personajes.map(personaje => <Card personaje={personaje}/>)
-  // // console.log(mapPersonajes);
   
-
   return (
-    <div>
+    <div className='App'>
       <Navbar modificarSearch={modificarSearch}/>
       <Routes>
         <Route exact path="/" element={<Main personajes={personajes} setPersonajes={setPersonajes} personajesFiltrados={personajesFiltrados} setPersonajesFiltrados={setPersonajesFiltrados} search={search} modificarPersonajesFiltrados={modificarPersonajesFiltrados}/>}/>

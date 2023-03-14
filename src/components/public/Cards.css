@@ -1,0 +1,9 @@
+.album {
+    background: linear-gradient(
+        0deg, 
+        rgba(250,4,79,1) 0%, 
+        rgba(255,93,150,1) 23%, 
+        rgba(255,177,113,1) 50%, 
+        rgba(255,219,118,1) 77%, 
+        rgba(255,206,23,1) 100%);
+}
