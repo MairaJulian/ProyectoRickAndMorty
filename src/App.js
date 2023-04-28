@@ -7,7 +7,6 @@ import Footer from './components/public/Footer';
 import Main from './components/public/Main';
 import Navbar from './components/public/Navbar';
 import UserForm from './components/public/UserForm';
-import { API_RM } from './constants/Api.constants';
 import RickAndMortyService from './services/RickAndMorty.service';
 
 
