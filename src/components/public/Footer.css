@@ -1,0 +1,17 @@
+.footerContainer {
+    background-color: rgb(48, 48, 48); 
+    color: white;
+}
+
+.footer {
+    color: white;
+}
+
+.nav {
+    background-color: rgb(48, 48, 48); 
+    color: white;
+}
+.nav-link {
+    text-decoration: none;
+    color: white;
+}

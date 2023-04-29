@@ -24,6 +24,7 @@ const Cards = ({personajes, personajesFiltrados, search, modificarPersonajesFilt
           {personajesFiltrados.map((pers) => <Card personaje={pers} />)}
         </div>
       </div>
+      
     </div>
   );
 };
