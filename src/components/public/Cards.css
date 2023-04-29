@@ -7,3 +7,15 @@
         rgba(255,219,118,1) 77%, 
         rgba(255,206,23,1) 100%);
 }
+
+.botonContainer {
+    padding: 20px;
+}
+
+.anterior {
+    margin: 10px;
+}
+
+.siguiente {
+    margin: 10px;
+}

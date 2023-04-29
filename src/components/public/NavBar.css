@@ -1,0 +1,40 @@
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.linksContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.lista {
+    /* list-style-type: none; */
+    display: flex;
+    margin: 10px;
+    
+}
+.lista li {
+    list-style-type: none;
+    /* display: flex; */
+    margin: 10px;
+}
+.home, .linkedin, .github {
+    text-decoration: none;
+    color: white;
+}
+
+.buscador {
+    display: flex;
+    
+}
+
