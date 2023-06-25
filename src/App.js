@@ -16,6 +16,8 @@ function App() {
   const [personajesFiltrados, setPersonajesFiltrados] = useState([])
   const [search, setSearch] = useState("")
 
+  console.log(search);
+
   const modificarSearch = (palabraABuscar) => {
     console.log("se esta ejecutando la funcion modificarSearch");
     setSearch(palabraABuscar);
